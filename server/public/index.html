@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess A Number!</title>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="scripts/client.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>YOUR GAME HERE!</h1>
+    <input id="guessOne" type="number" placeholder="player one guess">
+    <input id="guessTwo" type="number" placeholder="player two guess">
+    <input id="guessThree" type="number" placeholder="player three guess">
+    <button id="theSubmitButton">submit</button>
+    <button id="resetButton">Reset</button>
+
+    <section>
+      <h2> Round Number : <span id="roundNumber"></span></h2>
+    </section>
+
+    <div>
+    <table>
+      <th>
+        <tr>Player One Guess</tr>
+        <tr>Player Two Guess</tr>
+        <tr>Player Three Guess</tr>
+      </th>
+
+      <tbody id="guessHistory">
+        <!-- Guesses goes here -->
+      </tbody>
+    </table>
+
+    <table>
+      <h2>Results<h2>
+      <th>
+        <tr>Player One Results</tr>
+        <tr>Player Two Results</tr>
+        <tr>Player Three Results</tr>
+      </th>
+
+      <tbody id="guessResults">
+        <!-- guess results goes here  -->
+      </tbody>
+    </table>
+    </div>
+
+
+</body>
+</html>
